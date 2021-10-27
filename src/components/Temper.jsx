@@ -13,12 +13,14 @@ export default function Temper() {
     }
     fetchApi();
     },[search] )
+    
     return (
         <>
             <div className="App-header">
-                <div className="card">
-                    <div>
+                <div className="card" >
+                    <div className="ss">
                         <input type="search" name="searchbar" id="sbar" placeholder="city name"
+                        
                         onChange={(event)=>{setsearch(event.target.value)}} 
                         />
                     </div>                        
