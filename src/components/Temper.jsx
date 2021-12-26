@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 export default function Temper() {
     const [city, setcity] = useState(null);
-    const [search, setsearch] = useState("dhaka");
+    const [search, setsearch] = useState('dhaka');
     useEffect(()=>{
         const fetchApi= async ()=>{
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=0c566f1e90e9d98a94d3b56c6a8367cb`
